@@ -1,0 +1,27 @@
+1. What is c ?
+1. Prerequisits
+1. Hellow world program
+1. Printf
+1. Data types
+	2. basic data types
+	2. derived data types
+1. Operators
+	2. arthimatic operators
+	2. conditional operators
+	2. relational operators
+	2. logical operators
+1. Looping statements
+	2. for
+	2. while
+	2. do-while
+1. Few programs	
+1. functions
+1. Arrays
+1. pointers	
+1. structures
+1. Pre-processors
+1. Files
+1. mislleneous 
+
+
+	

@@ -1,0 +1,304 @@
+<style>
+ body{
+   font: 15px/1.5 Arial, Helvetica,sans-serif;
+   padding:0;
+   margin:auto;
+   background-color:#f4f4f4;
+ }
+
+ header{
+   background:#e8491d;
+   color:#ffffff;
+   padding-top:5px;
+   min-height:50px;
+   text-align: center;
+   margin: auto;
+ }
+
+ header p, header h1{
+   padding: 0px;
+   margin: 0px;
+   padding-bottom: 15px;
+ }
+
+.container{
+  width: 100%;
+  margin-left: auto;
+}
+
+.clang_container, .cpp_container{
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.clang_container li, .cpp_container li{
+      list-style: none;
+      text-decoration: none;
+      line-height: 2em;
+}
+
+ .profile{
+   border: 1px white solid;
+   word-wrap: normal;
+ }
+
+ #image{
+   margin-right: 10px;
+   border: 1px black solid;
+   display: inline-block;
+   float: left;
+   width: 100px;
+   top: 200px;
+ }
+
+ .checked {
+     color: orange;
+ }
+
+ .profile{
+   padding: 2px;
+ }
+
+ .overview{
+   display: inline-block;
+   float: left;
+ }
+.overview span{
+  font-weight: normal;
+}
+
+ .overview h3, .overview h4, .rating h3, .rating h4{
+   padding: 8px;
+   margin: 0px;
+   padding-top: 0px;
+ }
+
+ .sub_rating{
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+ }
+
+ .stars{
+     margin-left: 0px;
+     margin-top: 4px;
+  }
+
+ .clear1{
+   clear:both;
+ }
+
+ #moreBtn{
+   width: auto;
+   height: 25px;
+   background-color: black;
+   color: white;
+   margin: 0px;
+   padding: 5px;
+   border:  0px;
+ }
+
+ nav{
+     border-bottom: 3px gray solid;
+     background:#35424a;
+     border-bottom:#e8491d 3px solid;
+     padding: 0px;
+     margin: 0px;
+ }
+
+ ul{
+   padding: 0px;
+   padding-left: 10px;
+   margin: 0px;
+ }
+
+ nav li a{
+   color: white;
+   padding: 0px;
+   margin: 0px;
+   text-decoration: none;
+   padding-right: 10px;
+   border-right: 1px white solid;
+ }
+
+ nav li {
+   list-style: none;
+   padding: 3px;
+   display: inline-block;
+   color: white;
+   margin: 0px;
+   padding: 0px;
+ }
+
+ nav li:hover{
+   font-style: italic;
+ }
+
+ .current{
+   background: #e8491d;
+ }
+
+ #ReviewBtnDiv{
+   text-align: center;
+ }
+
+ #ReviewBtn{
+   text-align: center;
+   margin: 5px auto;
+   width: 30%;
+   height: 30px;
+   font-weight: bold;
+   border-radius: 5px;
+   background-color: #35424a;
+   color: white;
+ }
+
+ #submitBtn{
+   text-align: center;
+   height: 30px;
+   font-weight: bold;
+   border-radius: 5px;
+   background-color: #35424a;
+   color: white;
+ }
+
+ #ReviewBtn:hover, #submitBtn:hover{
+   font-style: italic;
+ }
+
+.mandatary{
+    color: red;
+    font-weight: bold;
+}
+
+.searchDiv{
+   text-align: center;
+   margin: 0px auto;
+   border: 0px 5px;
+   display: grid;
+   grid-template-columns: 10fr 1fr;
+}
+
+#search_result > h3, #recentReviews > h3{
+  color: #e8491d;
+  padding: 5px 0px;
+  margin: 5px 0px auto;
+  text-align: center;
+}
+
+#recentReviews, #resultsArea{
+    margin-top: 10px;
+    border: 5px white solid;
+}
+
+ .reviewform{
+   display: grid;
+   width: 100%;
+   margin: 20px auto;
+   padding: 0px;
+ }
+
+ .reviewform div input{
+   width: 100%;
+   padding: 3px 0px;
+ }
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+#errorpage{
+  color: red;
+  font-weight: bold;
+}
+
+.heading_top{
+  border: 4px white solid;
+  font-weight: bold;
+}
+
+.c_container{
+  width: 95%;
+  margin: auto;
+}
+
+.new_topic{
+  border: 2px white solid;
+}
+
+.new_topic h4{
+  padding: 0px;
+  margin: 0px;
+  padding-bottom: 1px;
+}
+.new_topic h5{
+  color:blue;
+  padding-top: 3px;
+  margin: 0px;
+}
+.new_topic p{
+  padding: 4px 0px;
+  margin: 0px;
+}
+
+.new_topic img{
+  display: block;
+  margin: 0px auto;
+}
+
+blockquote{
+  background: gray;
+  color: white;
+  padding: 2px 0px;
+  margin: 10px 10px auto;
+  overflow-x: auto;
+}
+
+pre{
+  padding: 2px 0px;
+  margin: 0px auto;
+}
+
+.side_heading_answer ul{
+    ppadding-left: 50px;
+    mmargin: 0px;
+}
+
+.side_heading_answer li{
+  color: blue;
+  font-weight: bold;
+  padding: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.side_heading_answer li > h5{
+  color: blue;
+  font-weight: bold;
+  padding: 0px;
+  padding-left: 0px;
+  margin: 0px;
+}
+.side_heading_answer li > p{
+  color: black;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+}
+
+.inner_heading{
+  font-weight: bold;
+  margin: 10px 0px auto;
+  text-align: center;
+  text-decoration: underline;
+  color: e8491d;
+}
+
+</style>

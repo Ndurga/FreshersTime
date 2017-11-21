@@ -1,0 +1,202 @@
+<h3>What is c ?</h3>
+   <p>C is a basic level programing, OS like UNIX is developed in C only and Databases like Oracle, mysql and all developed in C only.</p>
+
+<h3>Prerequisits</h3>
+	<p>Absolutely nothing, C is a basic programming language we no need to have any previous experience on any programming language.</p>
+
+<h3>Hellow world program<h3>
+	<p>We are going to see world famous example "Hello World....";<p>
+	
+	<blackquote>
+		#include <stdio.h>
+		#include <conio.h>
+		
+		int main()
+		{
+			printf("Hello World...");
+			getch();
+			
+			return 0;
+		}
+	</blackquote>
+	
+	<blackquote>
+		<bold>output <bold> : Hellow World... 	
+	</blackquote>
+	
+	<h4>Explanation:</h4> 
+		
+		 <bold>#include <stdio.h></bold>: this pulls out  some extra code into the our program to make it work, ex: how does <bold>printf("Hellow World...")<bold> statement exicutes, <bold>#include<stdio.h></bold>: has a code required to exicute and print <bold>Hello World...</bold>.
+		 
+		 <bold>#include <conio.h></bold>: similarly like #include<stdio.h>, has a code which makes <bold>getch()</bold> function works.
+
+		 <bold>main()</bold>: main() is the entry point for the program, means our code start exicuting from this point.	
+		 
+		 <bold>return 0</bold> : returning zero, which intimates Operating System that our program has exicutes sucsessfully. 
+	
+	
+	<p>don't get to much into this program because you may not get anything at first site. don't worry move on and continue reading this complete tutorial you will be able to write much more complicated programs by the end of this tutorial.</p>
+
+<h3>Printf</h3>
+
+	<b>printf("any text")</b> : whatever text written insid the double quotes ("") will be printed on output screen (usally output screen typically be command window); 
+	will see much more in the coming tutorials.
+
+<h3>Data types</h3>
+	<h4>basic data types:</h4>
+		basic datatypes are character(char), integer(int), float and double.
+
+		<b>1.char :</b> char data type is used to store single character. ex: A-Z, a-z, 0-9 ans some special characters like %, &, * and ect...  
+
+		<blackquote>
+			<b>syntax</b>: 1. char c = 'A';
+						   2. char c;
+							  c = '7';
+		</blackquote>
+		
+		<b>ASCII</b> (<u>A</u>merican <u>S</u>tandard <u>C</u>ode for <u>I</u>nformation <u>I</u>nterchange):
+			every character has a ASCII value associated with it, ASCII supports 256 characters (0-255), each number is associated with 1 character.
+			
+			<blackquote>
+			<b>example:</b> 
+			<pre>
+			________________________                            
+			|character  | ASCII value|
+			|-----------|------------|
+			|	A		|	65		 |	
+			|	B		|	66       |
+			|	C		|	67		 | 
+			|	a		|	97		 | 	
+			|	b		|	98       |
+			|	1		|	120		 | 
+			|	2		|	121		 |
+			|	3		|	122		 |
+			|___________|____________|
+			</pre>
+			</blackquote>
+			
+			
+		when we print any of the character we will see ASCII values instead of charcter.
+			
+		<blackquote>
+			#include <stdio.h>
+			#include <conio.h>
+			
+			int main()
+			{
+				char ch = 'A';
+				printf("%c", ch);
+				getch();
+				return 0;
+			}
+		</blackquote>			
+
+		<blackquote>
+			<b>output :</b>  65
+		</blackquote>
+		
+		2.<b>Int :</b> int is the basic data type used to store integer type data, means decimal numbers.
+		
+			<pre>
+			<b>syntax</b>: 1. int i = 10;
+						   2. int i;
+							  i = 20;
+			</pre>
+		
+		<blackquote>
+			<b>Example:<b>
+			
+			#include <stdio.h>
+			#include <conio.h>
+			
+			int main()
+			{
+				int i = 10;
+				printf("%d", i);
+				getch();
+				return 0;
+			}
+		</blackquote>			
+
+		<blackquote>
+			<b>output :</b>  10
+		</blackquote>
+		
+		
+	<h4>derived data types</h4>
+		Arrays, Pointers, Structures are the derived dat types.
+
+		<b>Array:</b> Array is derived data type, which is used to store similar data types of basic data type, means if we want to store 100 numbers how do you do that 
+
+		<blackquote>
+		<pre>
+			int i1, t2, i3, i4, i5, i6,.................., i98, i99, i100;
+			
+			i1 = 10;
+			i2 = 20;
+			i3 = 30;
+			.
+			.
+			.
+			.
+			i100 = 1000;
+		</pre>	
+		</blackquote>
+		
+	is this how we need to store ??, we can do but need a simple way to store data.
+	
+		<blackquote>
+		<pre>
+			int arr[100] = {10, 20, 30, 40,............., 1000};  //simple way to store 100 integers 
+			
+			<b>Accessing values : </b> : we need to access values with the help of index, index starts from 0.
+			<b>ex:</b>	
+				arr[0]  will 10; 	
+				arr[1]  will 20;			
+				arr[5]  will 30; 	
+				arr[99] will 1000; 	
+		</pre>	
+		</blackquote>
+
+		<blackquote>
+			<b>Example:<b>
+			
+			#include <stdio.h>
+			#include <conio.h>
+			
+			int main()
+			{
+				int arr[5] = {10, 20, 30, 40, 50};
+				printf("%d", arr[3]);
+				getch();
+				return 0;
+			}
+		</blackquote>			
+
+		<blackquote>
+			<b>output :</b>  40
+		</blackquote>
+		
+		
+<h3>Operators : operators are used to perform operations on data types.</h3>
+	<h4>arthimatic operators</h4>
+		
+	
+	2. conditional operators
+	2. relational operators
+	2. logical operators
+<h3>Looping statements</h3>
+	2. for
+	2. while
+	2. do-while
+<h3>Few programs</h3>	
+<h3>functions</h3>
+<h3>Arrays</h3>
+<h3>pointers</h3>	
+<h3>structures</h3>
+<h3>Pre-processors</h3>
+<h3>Files</h3>
+<h3>mislleneous</h3> 
+
+
+	

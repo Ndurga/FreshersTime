@@ -1,0 +1,251 @@
+
+<div class='heading_top' >What is c ?</div>
+<div class='new_topic'>
+ <h4 id='heading'>What is c ?</h4>
+   <p>C is a basic level programing, OS like UNIX is developed in C only and Databases like Oracle, mysql and all developed in C only.</p>
+</div>
+
+<div class='heading_top' >Prerequisits</div>
+<div class='new_topic'>
+<h4>Prerequisits</h4>
+    <p>Absolutely nothing, C is a basic programming language we no need to have any previous experience on any programming language.</p>
+</div>
+
+<div class='heading_top' >Hello world program</div>
+<div class='new_topic'>
+    <h4>Hellow world program</h4>
+    <p>We are going to see world famous example "Hello World....";</p>
+
+
+    <blockquote>
+    <pre>
+    #include < stdio.h >
+    #include < conio.h >
+    int main()
+    {
+       printf("Hello World...");
+       getch();
+       return 0;
+    }
+    </pre>
+    </blockquote>
+
+    <blockquote>
+    <b>output </b> : Hellow World...
+    </blockquote>
+
+    <h4>Explanation:</h4>
+
+
+    <ul class='side_heading_answer'>
+      <li>
+         <h5>#include< stdio.h >:</h5> <p>this pulls out  some extra code into the our program to make it work.
+         ex: how does printf("Hellow World...") statement exicutes/works, #include< stdio.h > has a code required to exicute printf function and prints 'Hello World...' on to the console.</p>
+      </li>
+      <li>
+         <h5>#include < conio.h > : </h5> <p>similarly like #include< stdio.h >, has a code which makes <b>getch()</b> function works.</p>
+      </li>
+      <li>
+        <h5>main() :</h5> <p>main() is the entry point for the program, means our code start exicuting from this point.</p>
+      </li>
+      <li>
+        <h5>return 0 :</h5> <p>returning zero, which intimates Operating System that our program has exicutes sucsessfully.</p>
+        <div>
+      </li>
+    </ul>
+
+        <blockquote>don't get to much into this program because you may not get anything at first site. don't worry move on and continue reading this complete tutorial you will be able to write much more complicated programs by the end of this tutorial.</blockquote>
+</div>
+
+<div class='heading_top' >Printf</div>
+<div class='new_topic'>
+    <h4>Printf</h4>
+    <p><b>printf("any text")</b> : whatever text written insid the double quotes ("") will be printed on output screen (output screen typically be command window), will see much more in the coming tutorials.</p>
+</div>
+
+<div class='heading_top' >Data types</div>
+<div class='new_topic'>
+    <h4>Data types</h4>
+        <h5>basic data types:</h5>
+            <p>basic datatypes are character(char), integer(int), float and double.<p>
+
+        <p><b>1.char :</b> char data type is used to store single character. ex: A-Z, a-z, 0-9 ans some special characters like %, &, * and ect...<p>
+
+        <blockquote>
+            <b>syntax</b>: 1. char c = 'A';
+                           2. char c;
+                              c = '7';
+        </blockquote>
+
+        <b>ASCII</b> (<u>A</u>merican <u>S</u>tandard <u>C</u>ode for <u>I</u>nformation <u>I</u>nterchange):
+            every character has a ASCII value associated with it, ASCII supports 256 characters (0-255), each number is associated with 1 character.
+
+        <img src='C/images/ascii_table.png'></img>
+
+        when we print any of the character we will see ASCII values instead of charcter.
+
+    <blockquote>
+    <pre>
+    #include <stdio.h>
+    #include <conio.h>
+    int main()
+    {
+        char ch = 'A';
+        printf("%c", ch);
+        getch();
+        return 0;
+    }
+    </pre>
+    </blockquote>
+
+        <blockquote>
+            <b>output :</b>  65
+        </blockquote>
+
+        <p>2.<b>Int :</b> int is the basic data type used to store integer type data, means decimal numbers.</p>
+
+    <blockquote>
+    <pre>
+    <b>syntax1</b>:  1. int i = 10;
+    <b>syntax2</b>:  2. int i;
+              i = 20;
+    </pre>
+    </blockquote>
+
+    <blockquote>
+    <pre>
+    <b>Example:</b>
+    #include <stdio.h>
+    #include <conio.h>
+    int main()
+    {
+        int i = 10;
+        printf("%d", i);
+        getch();
+        return 0;
+    }
+    </pre>
+    </blockquote>
+
+    <blockquote>
+        <b>output :</b>  10
+    </blockquote>
+
+    <h5>derived data types</h5>
+        Arrays, Pointers, Structures are the derived dat types.
+
+        <p><b>Array:</b> Array is derived data type, which is used to store similar data types of basic data type, means if we want to store 100 numbers how do you do that.</p>
+
+	<blockquote>
+	<pre>
+	int i1, t2, i3, i4, i5, i6,.................., i98, i99, i100;
+
+	i1 = 10;
+	i2 = 20;
+	i3 = 30;
+	.
+	.
+	.
+	.
+	i100 = 1000;
+	</pre>
+	</blockquote>
+
+    <p>is this how we need to store ??, we can do but need a simple way to store data.</p>
+
+<blockquote>
+<pre>
+	int arr[100] = {10, 20, 30, 40,............., 1000};  //simple way to store 100 integers
+
+	<b>Accessing values : </b> : we need to access values with the help of index, index starts from 0.
+	<b>ex:</b>
+		arr[0]  will 10;
+		arr[1]  will 20;
+		arr[5]  will 30;
+		arr[99] will 1000;
+</pre>
+</blockquote>
+
+<blockquote>
+<pre>
+	<b>Example:</b>
+
+	#include <stdio.h>
+	#include <conio.h>
+
+	int main()
+	{
+		int arr[5] = {10, 20, 30, 40, 50};
+		printf("%d", arr[3]);
+		getch();
+		return 0;
+	}
+</pre>
+</blockquote>
+
+<blockquote>
+	<b>output :</b>  40
+</blockquote>
+</div>
+
+<div class='heading_top' >Operators</div>
+<div class='new_topic'>
+    <h4>Operators :</h4>
+    <p>operators are used to perform operations on data types.</p>
+<pre>
+  1.arthimatic operators
+  2. conditional operators
+  3. relational operators
+  4. logical operators
+<pre>
+</div>
+
+<div class='heading_top' >Looping statements</div>
+<div class='new_topic'>
+    <h4>Looping statements</h4>
+<pre>
+  1. for
+  2. while
+  3. do-while
+<pre>
+</div>
+
+<div class='heading_top' >Few programs</div>
+<div class='new_topic'>
+<h4>Few programs</h4>
+</div>
+
+<div class='heading_top' >functions</div>
+<div class='new_topic'>
+<h4>functions</h4>
+</div>
+
+<div class='heading_top' >Arrays</div>
+<div class='new_topic'>
+<h4>Arrays</h4>
+</div>
+
+<div class='heading_top' >pointers</div>
+<div class='new_topic'>
+<h4>pointers</h4>
+</div>
+
+<div class='heading_top' >structures</div>
+<div class='new_topic'>
+<h4>structures</h4>
+</div>
+
+<div class='heading_top' >Pre-processors</div>
+<div class='new_topic'>
+<h4>Pre-processors</h4>
+</div>
+
+<div class='heading_top' >Files</div>
+<div class='new_topic'>
+<h4>Files</h4>
+</div>
+
+<div class='heading_top' >mislleneous</div>
+<div class='new_topic'>
+<h4>mislleneous</h4>
+</div>

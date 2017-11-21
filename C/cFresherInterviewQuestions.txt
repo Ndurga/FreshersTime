@@ -1,0 +1,67 @@
+
+<div class='heading_top' >What is c ?</div>
+<div class='new_topic'>
+ <h4 id='heading'>What is c ?</h4>
+   <p>C is a basic level programing, OS like UNIX is developed in C only and Databases like Oracle, mysql and all developed in C only.</p>
+</div>
+
+
+<div class='heading_top' >What are the basic data types in C ?</div>
+<div class='new_topic'>
+ <h4 id='heading'>What are the basic data types in C ?</h4>
+   <p></p>
+<pre>
+  <b>1.char</b>   - char is used to store character dat types.
+  <b>2.int</b>     - int is used to store decimal numbers like 1,2,.....65536.
+  <b>3.float</b>  - float is used to store fractional nubers like 1.2, 3.4.....
+  <b>4.double</b> - double is used to store fractional nubers like 1.2777, 3.48888.....
+</pre>
+</div>
+
+
+<div class='heading_top' >What are the derived data types ?</div>
+<div class='new_topic'>
+ <h4 id='heading'>What are the derived data types ?</h4>
+   <p></p>
+ <pre>
+   <b>1.Arrays</b>    - arrays are used to store similar data types under same name.
+   <b>2.Structures</b> -  structures are used to store disimilar data types under same name.
+ </pre>
+</div>
+
+<div class='heading_top' >what is pointer ?</div>
+<div class='new_topic'>
+ <h4 id='heading'>what is pointer ?</h4>
+   <p>Pointer is derived data type used to store address of the other data type</p>
+
+   <blockquote>
+   <pre>
+  int i = 400;
+  int *iptr = &i;
+
+  iptr is int pointer and it stores address of the i;
+   </pre>
+   </blockquote>
+</div>
+
+<div class='heading_top' >What is structure ?</div>
+<div class='new_topic'>
+ <h4 id='heading'>What is structure ?</h4>
+   <p>Structure is a derived data type used to store disimilar data types.</p>
+
+   <blockquote>
+   <pre>
+   structure Struct{
+    char ch;
+    int i;
+    float f;
+   }
+
+   structure Struct S1;
+   S1.ch = 'A';
+   S1.i = 100;
+   S1.f = 10.50;
+   </pre>
+   </blockquote>
+
+</div>
